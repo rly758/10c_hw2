@@ -125,3 +125,39 @@ void grade_calculator::on_hw_sbox_8_valueChanged(int value)
         ui->hw_slider_8->setValue(value);
     }
 }
+
+void grade_calculator::on_midterm_slider_1_valueChanged(int value){
+    if(value != midterm_grade_1){
+        ui->midterm_sbox_1->setValue(value);
+    }
+}
+
+void grade_calculator::on_midterm_sbox_1_valueChanged(int value){
+    if(value != midterm_grade_1){
+        ui->midterm_slider_1->setValue(value);
+    }
+}
+
+void grade_calculator::on_midterm_slider_2_valueChanged(int value){
+    if(value != midterm_grade_2){
+        ui->midterm_sbox_2->setValue(value);
+    }
+}
+
+void grade_calculator::on_midterm_sbox_2_valueChanged(int value){
+    if(value != midterm_grade_2){
+        ui->midterm_slider_2->setValue(value);
+    }
+}
+
+void grade_calculator::on_final_slider_valueChanged(int value){
+    if(value != final_grade){
+        ui->final_sbox->setValue(value);
+    }
+}
+
+void grade_calculator::on_final_sbox_valueChanged(int value){
+    if(value != final_grade){
+        ui->final_slider->setValue(value);
+    }
+}

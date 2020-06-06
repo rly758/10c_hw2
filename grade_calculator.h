@@ -60,6 +60,17 @@ private slots:
 
     void on_hw_sbox_8_valueChanged(int value);
 
+    void on_midterm_slider_1_valueChanged(int value);
+
+    void on_midterm_sbox_1_valueChanged(int value);
+
+    void on_midterm_slider_2_valueChanged(int value);
+
+    void on_midterm_sbox_2_valueChanged(int value);
+
+    void on_final_slider_valueChanged(int value);
+
+    void on_final_sbox_valueChanged(int value);
 private:
     Ui::grade_calculator *ui;
     int hw_grade_1 = 0;
