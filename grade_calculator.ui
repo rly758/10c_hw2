@@ -213,7 +213,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QSpinBox" name="spinBox_8"/>
+        <widget class="QSpinBox" name="hw_sbox_8"/>
        </item>
       </layout>
      </item>
