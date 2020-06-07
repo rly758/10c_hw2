@@ -18,14 +18,7 @@ public:
     void set_hw_value(int value);
     void set_midterm_value(int value);
     void set_final_value(int value);
-public slots:
-    //void hw_value_changed(int value);
-    //void midterm_value_changed(int value);
-    //void final_value_changed(int value);
-    //void scheme_changed();
-
-signals:
-    //void equalize_slider_and_box(int value);
+    void calculate_overall_grade(bool grading_scheme_A, bool pic10b);
 
 private slots:
     void on_hw_slider_1_valueChanged(int value);
@@ -71,6 +64,13 @@ private slots:
     void on_final_slider_valueChanged(int value);
 
     void on_final_sbox_valueChanged(int value);
+
+    void on_radio_A_clicked();
+
+    void on_radio_B_clicked();
+
+    void on_course_selection_currentIndexChanged(int index);
+
 private:
     Ui::grade_calculator *ui;
     int hw_grade_1 = 0;
@@ -84,6 +84,9 @@ private:
     int midterm_grade_1 = 0;
     int midterm_grade_2 = 0;
     int final_grade = 0;
+    int project_grade = 0;
     double overall_grade = 0.0;
+    bool grading_scheme_A = true;
+    bool pic10b = true;
 };
 #endif // GRADE_CALCULATOR_H

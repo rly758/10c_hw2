@@ -14,7 +14,7 @@
    <string>grade_calculator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -219,7 +219,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -250,7 +250,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QLabel" name="final_grade_label">
+      <widget class="QLabel" name="overall_grade_label">
        <property name="text">
         <string>0.0</string>
        </property>
@@ -258,7 +258,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -286,7 +286,7 @@
       <widget class="QSpinBox" name="midterm_sbox_1"/>
      </item>
      <item>
-      <widget class="QLabel" name="label_11">
+      <widget class="QLabel" name="midterm_project_label">
        <property name="text">
         <string>Midterm 2</string>
        </property>
